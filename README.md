@@ -25,7 +25,7 @@ pip install -r requirements.txt
 ```
 download the data from 
 
-https://drive.google.com/drive/folders/18zqQiCJVgF7uzXgfbIJ-04zgz1ItNfF5?usp=sharing
+https://drive.google.com/drive/folders/18zqQiCJVgF7uzXgfbIJ-04zgz1ItNfF5?usp=sharing and put inside data_given/.
 
 ```bash
 git init
