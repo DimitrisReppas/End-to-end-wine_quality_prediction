@@ -1,14 +1,20 @@
 # End-to-end-wine_quality_prediction
 
+clone repo 
+
+```bash
+ git clone https://github.com/DimitrisReppas/End-to-end-wine_quality_prediction.git
+```
+
 create env 
 
 ```bash
-conda create -n wineq python=3.7 -y
+conda create -n yourenv python=3.7 -y
 ```
 
 activate env
 ```bash
-conda activate wineq
+conda activate youenv
 ```
 
 created a req file
@@ -30,31 +36,9 @@ dvc init
 ```bash
 dvc add data_given/winequality.csv
 ```
+Run the DVC Pipeline:
 ```bash
-git add .
-```
-```bash
-git commit -m "first commit"
-```
-
-oneliner updates  for readme
-
-```bash
-git add . && git commit -m "update Readme.md"
-```
-```bash
-git remote add origin https://github.com/c17hawke/simple-dvc-demo.git
-git branch -M main
-git push origin main
-```
-
-tox command -
-```bash
-tox
-```
-for rebuilding -
-```bash
-tox -r 
+dvc repro
 ```
 pytest command
 ```bash
