@@ -36,6 +36,12 @@ dvc init
 ```bash
 dvc add data_given/winequality.csv
 ```
+Run the following command in a new command promt window
+```bash
+mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./artifacts --host 0.0.0.0 -p 1234
+```
+Navigate to MLflow Ui in http://localhost:1234/ if you wish
+
 Run the DVC Pipeline:
 ```bash
 dvc repro
