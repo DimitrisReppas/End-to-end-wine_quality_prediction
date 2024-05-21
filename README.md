@@ -46,19 +46,26 @@ mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./
 ```
 Navigate to MLflow Ui in http://localhost:1234/ if you wish
 
+## Data preprocessing and ML training and evaluation
+
 Run the DVC Pipeline:
 ```bash
 dvc repro
 ```
+## Check the pre-trained model before running the app 
 pytest command
 ```bash
 pytest -v
 ```
+## Running the app and the inference model
 
-setup commands -
+
+pytest command
 ```bash
-pip install -e . 
+python app.py 
 ```
+
+
 
 build your own package commands- 
 ```bash
