@@ -57,6 +57,10 @@ pytest command
 ```bash
 pytest -v
 ```
+## Automatic testing
+
+Each time you do push or pull request an automatic testing of your code is being made with the added ci_cd.yaml in the .github\workflows directory
+
 ## Running the app and the inference model
 
 
@@ -65,23 +69,8 @@ pytest command
 python app.py 
 ```
 
-
-
-build your own package commands- 
-```bash
-python setup.py sdist bdist_wheel
-```
+## Running the app and the inference model with Docker
 
 
 
---- 
-create an artifcats folder 
 
-
-mlflow server command - 
-
-
-mlflow server \
-    --backend-store-uri sqlite:///mlflow.db \
-    --default-artifact-root ./artifacts \
-    --host 0.0.0.0 -p 1234
