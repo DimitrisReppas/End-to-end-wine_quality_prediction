@@ -3,11 +3,12 @@ FROM python:3.7
 WORKDIR /app
 
 COPY requirements.txt .
+COPY setup.py .
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -v --no-cache-dir -r requirements.txt
 
-COPY prediction_service /app/prediction_service
-COPY webapp /app/webapp
-COPY app.py /app/app.py
+COPY prediction_service ./prediction_service
+COPY webapp ./webapp
+COPY app.py ./app.py
 
 CMD ["gunicorn", "-b", "0.0.0.0:5000", "app:app"]
