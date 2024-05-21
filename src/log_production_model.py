@@ -54,7 +54,11 @@ def log_production_model(config_path):
 
     loaded_model = mlflow.pyfunc.load_model(logged_model)
     
-    model_path = config["webapp_model_dir"] #"prediction_service/model"
+    model_path = config["webapp_model_dir"] # "prediction_service/model"
+    model_dir = os.path.dirname(model_path)
+    
+    # Create directory if it does not exist
+    os.makedirs(model_dir, exist_ok=True)
 
     joblib.dump(loaded_model, model_path)
 

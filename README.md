@@ -27,6 +27,10 @@ download the data from
 
 https://drive.google.com/drive/folders/18zqQiCJVgF7uzXgfbIJ-04zgz1ItNfF5?usp=sharing and put inside data_given/.
 
+Install your package in an editable mode:
+```bash
+pip install -e .
+```
 ```bash
 git init
 ```
