@@ -58,7 +58,7 @@ The pipeline includes the following stages:
 2) data splitting
 3) model training
 4) model evaluation on the test set
-5) choosing the best model from the mlflow.db
+5) automatically choosing the best model from the mlflow.db
 
 Run the DVC Pipeline:
 ```bash
@@ -79,9 +79,11 @@ Each time you perform a push or pull request, automatic testing of your code is 
 
 ## Run the Wine Quality application
 
+![App_screenshot](wine_quality_prediction_app_screenshot.png)
+
 ### Running the app and the inference model
 
-pytest command
+
 ```bash
 python app.py 
 ```

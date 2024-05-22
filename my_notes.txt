@@ -1,0 +1,16 @@
+what I hold:
+1)nice structure of code
+2)dvc.yaml pipeline
+3)setup.py
+4)ci-cd.yaml (think about others test as well when pushing or pulling)
+5) mlflow and src/log_production_model.py for choosing the best model in the production
+
+Genika
+
+Polu oraio repo me polla perita omos
+
+TODO
+
+1)based on the previous na synexiso thn ereuna se antistoixa repos
+2)Na ftiaxo diko mou end-to-end repo me docker kai ola ta proigoymena sthn kalyteri dunati morfi. + me diaforetika ml models
+3)Na alaxo index.html
